@@ -8,6 +8,10 @@ class CollectionTest {
 
     @Test
     void a_panini_collector_should_see_his_empty_collection() {
-        assertThat("").isEqualTo("Votre collection est vide.");
+        assertThat(display()).isEqualTo("Votre collection est vide.");
+    }
+
+    private String display() {
+        return "Votre collection est vide.";
     }
 }
